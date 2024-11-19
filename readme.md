@@ -17,7 +17,7 @@
 
 6. **Write a code to drag an image from outside the box and drop it inside the box.**  
    **[5 Marks]**
-   [View Code](html+js/dragAndDrop.html)
+     [View Code](html+js/dragAndDrop.html)
 
 7. **Create an external stylesheet and link it to an HTML form. The stylesheet should include:**
 
