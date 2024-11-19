@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Image</title>
+    <style>
+        #dropZone {
+            width: 300px;
+            height: 300px;
+            border: 2px dashed #555;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+        }
+
+        .draggable {
+            width: 100px;
+            cursor: grab;
+        }
+
+        #dropZone img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 style="text-align: center;">Drag and Drop Example</h2>
+    <p style="text-align: center;">Drag the image below into the box.</p>
+
+    <div style="text-align: center;">
+        <img src="https://via.placeholder.com/100" id="dragImage" class="draggable" draggable="true"
+            alt="Draggable Image">
+    </div>
+
+    <div id="dropZone">Drop Here</div>
+
+    <script>
+        const dragImage = document.getElementById("dragImage");
+        const dropZone = document.getElementById("dropZone");
+
+        // Add dragstart event to the draggable image
+        dragImage.addEventListener("dragstart", (event) => {
+            event.dataTransfer.setData("text/plain", event.target.id);
+        });
+
+        // Prevent default behavior for dragover to allow dropping
+        dropZone.addEventListener("dragover", (event) => {
+            event.preventDefault();
+        });
+
+        // Handle the drop event
+        dropZone.addEventListener("drop", (event) => {
+            event.preventDefault();
+            const data = event.dataTransfer.getData("text/plain");
+            const draggedElement = document.getElementById(data);
+
+            // Append the dragged element to the drop zone
+            if (draggedElement && !dropZone.contains(draggedElement)) {
+                dropZone.textContent = ""; // Clear the placeholder text
+                dropZone.appendChild(draggedElement);
+            }
+        });
+    </script>
+
+</body>
+
+</html>
