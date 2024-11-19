@@ -1,0 +1,9 @@
+<!ELEMENT eCommerce (product+)>
+<!ELEMENT product (productId, productName, productCost, purchasedDate, purchasedBy, sellerName)>
+
+<!ELEMENT productId (#PCDATA)>
+<!ELEMENT productName (#PCDATA)>
+<!ELEMENT productCost (#PCDATA)>
+<!ELEMENT purchasedDate (#PCDATA)>
+<!ELEMENT purchasedBy (#PCDATA)>
+<!ELEMENT sellerName (#PCDATA)>

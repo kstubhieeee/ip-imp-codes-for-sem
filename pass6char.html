@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Name and Password</title>
+    <style>
+        form {
+            width: 300px;
+            margin: 20px auto;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        input {
+            width: 100%;
+            margin: 10px 0;
+            padding: 8px;
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="text-align: center;">User Login</h2>
+    <form id="loginForm" onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Enter your name">
+        <span class="error" id="nameError"></span>
+
+        <input type="password" id="password" placeholder="Enter your password">
+        <span class="error" id="passwordError"></span>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            const name = document.getElementById("name").value.trim();
+            const password = document.getElementById("password").value.trim();
+
+            const nameError = document.getElementById("nameError");
+            const passwordError = document.getElementById("passwordError");
+
+            // Reset error messages
+            nameError.textContent = "";
+            passwordError.textContent = "";
+
+            let isValid = true;
+
+            // Validate name
+            if (name === "") {
+                nameError.textContent = "Name should not be empty.";
+                isValid = false;
+            }
+
+            // Validate password
+            if (password.length < 6) {
+                passwordError.textContent = "Password should be at least 6 characters long.";
+                isValid = false;
+            }
+
+            return isValid;
+        }
+    </script>
+</body>
+
+</html>

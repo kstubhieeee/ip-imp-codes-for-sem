@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Form</title>
+    <style>
+        form {
+            width: 300px;
+            margin: 20px auto;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        input {
+            width: 100%;
+            margin: 10px 0;
+            padding: 8px;
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Alumni Form</h2>
+    <form id="alumniForm" onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Name">
+        <span class="error" id="nameError"></span>
+
+        <input type="text" id="address" placeholder="Address">
+        <span class="error" id="addressError"></span>
+
+        <input type="date" id="dob" placeholder="Date of Birth">
+        <span class="error" id="dobError"></span>
+
+        <input type="text" id="email" placeholder="Email">
+        <span class="error" id="emailError"></span>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            const name = document.getElementById("name").value.trim();
+            const address = document.getElementById("address").value.trim();
+            const dob = document.getElementById("dob").value;
+            const email = document.getElementById("email").value.trim();
+
+            const nameError = document.getElementById("nameError");
+            const addressError = document.getElementById("addressError");
+            const dobError = document.getElementById("dobError");
+            const emailError = document.getElementById("emailError");
+
+            // Reset errors
+            nameError.textContent = "";
+            addressError.textContent = "";
+            dobError.textContent = "";
+            emailError.textContent = "";
+
+            let isValid = true;
+
+            // Check if all fields are filled
+            if (name === "") {
+                nameError.textContent = "Name is required.";
+                isValid = false;
+            }
+
+            if (address === "") {
+                addressError.textContent = "Address is required.";
+                isValid = false;
+            }
+
+            if (dob === "") {
+                dobError.textContent = "Date of Birth is required.";
+                isValid = false;
+            } else {
+                const birthYear = new Date(dob).getFullYear();
+                const currentYear = new Date().getFullYear();
+                const age = currentYear - birthYear;
+
+                if (age < 22) {
+                    dobError.textContent = "You must be at least 22 years old.";
+                    isValid = false;
+                }
+            }
+
+            // Validate email
+            if (email === "" || !email.includes("@") || !email.includes(".")) {
+                emailError.textContent = "Enter a valid email address.";
+                isValid = false;
+            }
+
+            return isValid;
+        }
+    </script>
+</body>
+
+</html>

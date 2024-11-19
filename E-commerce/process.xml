@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE eCommerce SYSTEM "eCommerce.dtd">
+<eCommerce>
+    <product>
+        <productId>12345</productId>
+        <productName>Wireless Mouse</productName>
+        <productCost>20.99</productCost>
+        <purchasedDate>2024-11-19</purchasedDate>
+        <purchasedBy>John Doe</purchasedBy>
+        <sellerName>Best Electronics</sellerName>
+    </product>
+
+    <product>
+        <productId>67890</productId>
+        <productName>Keyboard</productName>
+        <productCost>30.50</productCost>
+        <purchasedDate>2024-11-15</purchasedDate>
+        <purchasedBy>Jane Smith</purchasedBy>
+        <sellerName>Tech World</sellerName>
+    </product>
+</eCommerce>

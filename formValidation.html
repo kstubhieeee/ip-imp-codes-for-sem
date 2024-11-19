@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form Validation</title>
+    <style>
+        form {
+            width: 300px;
+            margin: auto;
+        }
+
+        input {
+            width: 100%;
+            margin: 10px 0;
+            padding: 8px;
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Form Validation</h2>
+    <form id="myForm" onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Name (A-Z)">
+        <span class="error" id="nameError"></span>
+
+        <input type="number" id="age" placeholder="Age (0-100)">
+        <span class="error" id="ageError"></span>
+
+        <input type="text" id="email" placeholder="Email (must contain @)">
+        <span class="error" id="emailError"></span>
+
+        <input type="password" id="password" placeholder="Password">
+        <span class="error" id="passwordError"></span>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            const name = document.getElementById("name").value.trim();
+            const age = document.getElementById("age").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value.trim();
+
+            const nameError = document.getElementById("nameError");
+            const ageError = document.getElementById("ageError");
+            const emailError = document.getElementById("emailError");
+            const passwordError = document.getElementById("passwordError");
+
+            // Clear previous error messages
+            nameError.textContent = "";
+            ageError.textContent = "";
+            emailError.textContent = "";
+            passwordError.textContent = "";
+
+            let isValid = true;
+
+            // Validate Name
+            if (!/^[A-Za-z]+$/.test(name)) {
+                nameError.textContent = "Name must only contain letters (A-Z).";
+                isValid = false;
+            }
+
+            // Validate Age
+            if (age === "" || age < 0 || age > 100) {
+                ageError.textContent = "Age must be between 0 and 100.";
+                isValid = false;
+            }
+
+            // Validate Email
+            if (!email.includes("@")) {
+                emailError.textContent = "Email must contain '@'.";
+                isValid = false;
+            }
+
+            // Validate Password
+            const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{6,}$/;
+            if (!passwordRegex.test(password)) {
+                passwordError.textContent =
+                    "Password must include 1 uppercase letter, 1 number, 1 special character, and be at least 6 characters.";
+                isValid = false;
+            }
+
+            return isValid;
+        }
+    </script>
+</body>
+
+</html>

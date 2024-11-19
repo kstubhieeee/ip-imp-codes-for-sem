@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="library.xsl"?>
+<library>
+    <book>
+        <name>The Great Gatsby</name>
+        <author>F. Scott Fitzgerald</author>
+        <publisher>Charles Scribner's Sons</publisher>
+        <year>1925</year>
+    </book>
+    <book>
+        <name>1984</name>
+        <author>George Orwell</author>
+        <publisher>Secker & Warburg</publisher>
+        <year>1949</year>
+    </book>
+    <book>
+        <name>To Kill a Mockingbird</name>
+        <author>Harper Lee</author>
+        <publisher>J.B. Lippincott & Co.</publisher>
+        <year>1960</year>
+    </book>
+    <book>
+        <name>The Catcher in the Rye</name>
+        <author>J.D. Salinger</author>
+        <publisher>Little, Brown and Company</publisher>
+        <year>1951</year>
+    </book>
+</library>
