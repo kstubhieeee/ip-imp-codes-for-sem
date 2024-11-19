@@ -18,9 +18,9 @@
 10. Create an external stylesheet and link it to an HTML form. The stylesheet should include:
    - A header with red text and a yellow background.
    - A double-lined table with 5 rows and 3 columns:
-    - First column: Serial number of the product.
-    - Second column: Image with a hyperlink and name of the product.
-    - Third column: Description of the product. **[10 Marks]**
+     - First column: Serial number of the product.
+     - Second column: Image with a hyperlink and name of the product.
+     - Third column: Description of the product. **[10 Marks]**
    - [View Code](css-question-2/index.html)
 
 # Module 2: Front-End Development
