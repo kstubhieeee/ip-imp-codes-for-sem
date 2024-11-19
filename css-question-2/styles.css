@@ -1,0 +1,43 @@
+/* Apply background image to the body */
+body {
+    background-image: url('img1.jpg');
+    background-size: cover;
+    /* Ensures the image covers the entire background */
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    /* Default text color */
+}
+
+/* Table header with red background color */
+table th {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Alternate paragraph background colors */
+p.alternate {
+    background-color: #f0f0f0;
+    /* Light gray background for alternate paragraphs */
+    padding: 5px;
+}
+
+/* Styling for regular paragraphs */
+p {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+/* Removing underline from hyperlinks */
+a {
+    text-decoration: none;
+    color: blue;
+    /* You can change the color of the links */
+}
+
+a:hover {
+    color: darkblue;
+    /* Change color on hover */
+}

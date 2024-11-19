@@ -1,0 +1,55 @@
+/* Styling the header */
+header h1 {
+    color: red;
+    background-color: yellow;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the table */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+/* Adding double-lined borders to the table */
+table,
+th,
+td {
+    border: 3px double black;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Styling the product image and link */
+td img {
+    display: block;
+    margin: 0 auto 5px;
+}
+
+td a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
