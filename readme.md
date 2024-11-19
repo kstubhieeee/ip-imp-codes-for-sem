@@ -85,8 +85,7 @@
    - [View Code](library/index.xml)
    - [View Code](library/library.xsl)
 10. Write a PHP code to find factorial of a number
-
-- [View Code](php/factorial.php)
+   - [View Code](php/factorial.php)
 
 # Module 6: React.js
 
