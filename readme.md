@@ -24,16 +24,22 @@
    - Name should not be empty.
    - Password should be at least 6 characters long. **[10 Marks]**
    - [View Code](html+js/pass6char.html)
-3. Write a JavaScript code that reads ten numbers and displays the count of negative numbers, positive numbers, and zeros. **[10 Marks]**
-   - [View Code](js/TenNos.js)
-4. Explain how JavaScript can hide HTML elements with a suitable example. **[5 Marks]**
-5. Create a form with the following fields: Name, Age, Email ID, and Password. Validate each field using JavaScript:
+3. Create a form which has the following fields: 'Name', 'Age', 'Email ID', and 'Password'. Validate each field using JavaScript:
    - Name should only contain alphabets (A-Z).
    - Age should be between 0 and 100.
    - Email ID must include `@`.
    - Password should contain at least 1 uppercase letter, 1 digit, 1 special character, and have a minimum length. **[10 Marks]**
    - [View Code](html+js/formValidation.html)
-6. Explain exception handling in JavaScript with a suitable example. **[10 Marks]**
+4. Write the code to process online alumni information for your college. Create forms to get Name, Address, Date of Birth, and Email ID. Validate the following using JavaScript:
+   - User has filled all the fields prior to form submission.
+   - Valid Email ID (must include `@` and `.`).
+   - Age validation using DOB (>= 22 years). **[10 Marks]**
+   - [View Code](html+js/alumniValidation.html)
+5. Write a JavaScript code that reads ten numbers and displays the count of negative numbers, positive numbers, and zeros. **[10 Marks]**
+   - [View Code](js/TenNos.js)
+6. Write a JavaScript program to check if Password and Confirm Password are the same. **[5 Marks]**
+   - [View Code](js/passConfirm.js)
+7. Explain exception handling in JavaScript with a suitable example. **[10 Marks]**
 
 # Module 3: Back-End Development
 
@@ -64,7 +70,6 @@
 5. Discuss various control structures in PHP with suitable examples. **[10 Marks]**
 6. If you wanted to send sensitive information like a password to the backend, would you use the GET or POST method in PHP? Justify your answer and distinguish between these methods. **[5 Marks]**
 7. Explain how form validation works in PHP with a suitable example. **[10 Marks]**
-   - [View Code](php/factorial.php)
 8. An e-commerce website needs to handle the following data and transfer it using XML:
    - Product ID
    - Product Name
@@ -74,6 +79,14 @@
    - Seller Name  
      Write the HTML, XML code, and DTD for this data. **[10 Marks]**
      - [View Code](E-commerce/index.html)
+     - [View Code](E-commerce/process.xml)
+     - [View Code](E-commerce/eCommerce.dtd)
+9. Create a well-formed XML document to maintain a library catalog. It should include the name of the book, author, publisher, and year of publishing. Format it in a tabular manner using XSLT. **[10 Marks]**
+   - [View Code](library/index.xml)
+   - [View Code](library/library.xsl)
+10. Write a PHP code to find factorial of a number
+
+- [View Code](php/factorial.php)
 
 # Module 6: React.js
 
