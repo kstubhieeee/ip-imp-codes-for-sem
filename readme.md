@@ -16,7 +16,6 @@
 8. Explain basic internet protocols essential for transferring data and sending emails. **[10 Marks]**
 9. List and explain the 3 ways to add a stylesheet (CSS) to an HTML web page with suitable examples. **[10 Marks]**
 10. Create an external stylesheet and link it to an HTML form. The stylesheet should include:
-
 - A header with red text and a yellow background.
 - A double-lined table with 5 rows and 3 columns:
   - First column: Serial number of the product.
