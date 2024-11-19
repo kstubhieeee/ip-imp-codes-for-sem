@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Example</title>
+</head>
+
+<body>
+    <h1>Read Text File using AJAX</h1>
+    <button id="loadFileBtn">Load File</button>
+    <div id="output" style="margin-top: 20px; padding: 10px; border: 1px solid #ccc;"></div>
+
+    <script>
+        document.getElementById('loadFileBtn').addEventListener('click', function () {
+            // Create a new XMLHttpRequest object
+            const xhr = new XMLHttpRequest();
+
+            // Specify the method and the file to be read
+            xhr.open('GET', 'example.txt', true);
+
+            // Define what happens on successful data retrieval
+            xhr.onload = function () {
+                document.getElementById('output').innerText = xhr.responseText;
+            };
+
+            // Send the request
+            xhr.send();
+        });
+    </script>
+</body>
+
+</html>
