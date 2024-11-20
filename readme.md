@@ -1,5 +1,4 @@
 # Solution of PYQs and important questions for Internet Programming 
-### (Mumbai University)
 
 ## Differentiate Between the Following
 
