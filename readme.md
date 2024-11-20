@@ -88,6 +88,14 @@
 7. **Explain exception handling in JavaScript with a suitable example.**  
    **[10 Marks]**
 
+8. **Explain built in objects in Javascript.**
+   **[10 Marks]**
+
+9. **Explain Javascript DOM Model**
+   **[10 Marks]**
+
+10. **Explain how Javascript can hide and show elements with the help of an example**
+   **[5 Marks]**
 ---
 
 ## **Module 3: Back-End Development**
