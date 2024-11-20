@@ -198,3 +198,6 @@
 
 3. **What is JSX? Explain its attributes with an example.**  
    **[10 Marks]**
+
+4. **What are the features of React.**  
+   **[10 Marks]**
