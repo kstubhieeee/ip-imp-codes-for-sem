@@ -109,6 +109,7 @@
 
 10. **Explain how Javascript can hide and show elements with the help of an example**
     **[5 Marks]**
+    [View Code](hide-and-show/index.html)
 
 ---
 
