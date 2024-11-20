@@ -181,6 +181,8 @@
 
 ## **Module 6: React.js**
 
+[View Notes](notes/module6.pdf)
+
 1. **Discuss the advantages of React.js.**  
    **[5 Marks]**
 
