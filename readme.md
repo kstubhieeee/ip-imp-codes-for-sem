@@ -4,7 +4,7 @@
    **[5 Marks]**
 
 2. **Explain the working of `rowspan` and `colspan` in an HTML table with a suitable example.**  
-   **[10 Marks]**
+   **[10 Marks]** [View Code](colspan_rowspan)
 
 3. **Explain how the shadow effect can be applied to text using CSS with a suitable example.**  
    **[10 Marks]**
