@@ -1,4 +1,4 @@
-# Solution of PYQs and important questions for Internet Programming 
+# Solution of PYQs and important questions for Internet Programming
 
 ## Differentiate Between the Following
 
