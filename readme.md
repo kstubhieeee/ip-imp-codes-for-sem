@@ -138,6 +138,8 @@
 
 ## **Module 4: Rich Internet Application (RIA)**
 
+[View Notes](notes/module4.pdf)
+
 1. **What are the characteristics of Rich Internet Applications (RIA)?**  
    **[5 Marks]**
 
