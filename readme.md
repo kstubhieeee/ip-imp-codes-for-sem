@@ -95,7 +95,8 @@
    **[10 Marks]**
 
 10. **Explain how Javascript can hide and show elements with the help of an example**
-   **[5 Marks]**
+    **[5 Marks]**
+
 ---
 
 ## **Module 3: Back-End Development**
@@ -200,4 +201,3 @@
 
 3. **What is JSX? Explain its attributes with an example.**  
    **[10 Marks]**
-
