@@ -10,14 +10,14 @@
    **[10 Marks]** [View Code](shadow/index.html)
 
 4. **Explain any 5 semantic tags of HTML5 with an example.**  
-   **[10 Marks]**
+   **[10 Marks]** [View Code](semantic-tags)
 
 5. **What is HTTP? Describe the structure of HTTP request and response messages.**  
    **[10 Marks]**
 
 6. **Write a code to drag an image from outside the box and drop it inside the box.**  
    **[5 Marks]**
-     [View Code](html+js/dragAndDrop.html)
+   [View Code](html+js/dragAndDrop.html)
 
 7. **Create an external stylesheet and link it to an HTML form. The stylesheet should include:**
 
