@@ -1,4 +1,6 @@
-## **Module 1: Introduction to Web Technology** [View Notes](notes/module1.pdf)
+## **Module 1: Introduction to Web Technology**
+
+[View Notes](notes/module1.pdf)
 
 1. **Explain `<audio>` and `<video>` controls of HTML5 with an appropriate example.**  
    **[5 Marks]**
