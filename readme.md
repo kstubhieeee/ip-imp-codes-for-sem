@@ -1,4 +1,6 @@
-# Differentiate Between the Following
+# Solution of PYQs and important questions for Internet Programming 
+
+## Differentiate Between the Following
 
 [View Notes](notes/all_modules_difference_between.pdf)
 
