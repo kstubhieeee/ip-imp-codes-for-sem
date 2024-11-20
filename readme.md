@@ -1,3 +1,14 @@
+# Differentiate Between the Following
+
+[View Notes](notes/all_modules_difference_between.pdf)
+
+1. **HTML and HTML5**
+2. **Class Selector and ID Selector**
+3. **GET Method and POST Method in PHP**
+4. **JSON and XML**
+5. **Internal DTD and External DTD**
+6. **Ajax Application Model and Traditional Application Model**
+
 ## **Module 1: Introduction to Web Technology**
 
 [View Notes](notes/module1.pdf)
