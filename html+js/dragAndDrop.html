@@ -14,6 +14,7 @@
             align-items: center;
             justify-content: center;
             margin: 20px auto;
+            text-align: center;
         }
 
         .draggable {
@@ -29,45 +30,33 @@
 </head>
 
 <body>
-
     <h2 style="text-align: center;">Drag and Drop Example</h2>
     <p style="text-align: center;">Drag the image below into the box.</p>
 
     <div style="text-align: center;">
-        <img src="https://via.placeholder.com/100" id="dragImage" class="draggable" draggable="true"
-            alt="Draggable Image">
+        <img src="https://via.placeholder.com/100" id="dragImage" class="draggable" draggable="true" alt="Draggable">
     </div>
 
     <div id="dropZone">Drop Here</div>
 
     <script>
+        // Simplified drag and drop logic
         const dragImage = document.getElementById("dragImage");
         const dropZone = document.getElementById("dropZone");
 
-        // Add dragstart event to the draggable image
-        dragImage.addEventListener("dragstart", (event) => {
-            event.dataTransfer.setData("text/plain", event.target.id);
-        });
+        dragImage.ondragstart = (e) => e.dataTransfer.setData("id", e.target.id);
 
-        // Prevent default behavior for dragover to allow dropping
-        dropZone.addEventListener("dragover", (event) => {
-            event.preventDefault();
-        });
+        dropZone.ondragover = (e) => e.preventDefault();
 
-        // Handle the drop event
-        dropZone.addEventListener("drop", (event) => {
-            event.preventDefault();
-            const data = event.dataTransfer.getData("text/plain");
-            const draggedElement = document.getElementById(data);
-
-            // Append the dragged element to the drop zone
-            if (draggedElement && !dropZone.contains(draggedElement)) {
-                dropZone.textContent = ""; // Clear the placeholder text
-                dropZone.appendChild(draggedElement);
+        dropZone.ondrop = (e) => {
+            e.preventDefault();
+            const draggedElement = document.getElementById(e.dataTransfer.getData("id"));
+            if (draggedElement) {
+                dropZone.innerHTML = ""; // Clear placeholder text
+                dropZone.appendChild(draggedElement); // Move the dragged element
             }
-        });
+        };
     </script>
-
 </body>
 
 </html>
