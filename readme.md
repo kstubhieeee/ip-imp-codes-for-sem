@@ -63,6 +63,8 @@
 
 ## **Module 2: Front-End Development**
 
+[View Notes](notes/module2.pdf)
+
 1. **What is event handling in JavaScript? Explain it with an example.**  
    **[10 Marks]** [View Code](event-handling/index.html)
 
