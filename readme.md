@@ -164,6 +164,8 @@
 
 ## **Module 5: Web Extensions - PHP and XML**
 
+[View Notes](notes/module5.pdf)
+
 1. **Explain the different data types in PHP.**  
    **[5 Marks]**
 
