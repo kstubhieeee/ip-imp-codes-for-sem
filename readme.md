@@ -117,6 +117,8 @@
 
 ## **Module 3: Back-End Development**
 
+[View Notes](notes/module3.pdf)
+
 1. **Write a short note on JDBC.**  
    **[10 Marks]**
 
