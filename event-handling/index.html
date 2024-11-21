@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Event Handling Example</title>
+</head>
+
+<body>
+    <h1 id="greeting">Hello!</h1>
+    <button id="changeTextButton">Change Text</button>
+
+    <script>
+        const button = document.getElementById('changeTextButton');
+        button.addEventListener('click', function () {
+            document.getElementById('greeting').textContent = 'Hello, World!';
+        });
+
+    </script>
+</body>
+
+</html>

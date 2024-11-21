@@ -64,7 +64,7 @@
 ## **Module 2: Front-End Development**
 
 1. **What is event handling in JavaScript? Explain it with an example.**  
-   **[10 Marks]**
+   **[10 Marks]** [View Code](event-handling/index.html)
 
 2. **Write a JavaScript code to accept a name and password from the user and validate the data:**
 
