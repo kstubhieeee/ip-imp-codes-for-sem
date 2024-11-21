@@ -50,13 +50,11 @@
 9. **List and explain the 3 ways to add a stylesheet (CSS) to an HTML web page with suitable examples.**  
    **[10 Marks]**
 
-10. **Create an external stylesheet and link it to an HTML form. The stylesheet should include:**
-    - A header with red text and a yellow background.
-    - A double-lined table with 5 rows and 3 columns:
-      - **First column**: Serial number of the product.
-      - **Second column**: Image with a hyperlink and name of the product.
-      - **Third column**: Description of the product.  
-        **[10 Marks]**  
+10. **Write an external stylesheet and link it to an HTML file. The stylesheet should include the following:**
+   - The web page will have the background image `img1.jpg`.
+   - The table heading will have a red background color.
+   - Alternate paragraphs will have different background colors.
+   - The hyperlinks on the web page will not have an underline. **[10 Marks]**
         [View Code](css-question-2/index.html)
 
 ---
