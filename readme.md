@@ -99,7 +99,7 @@
    [View Code](js/passConfirm.js)
 
 7. **Explain exception handling in JavaScript with a suitable example.**  
-   **[10 Marks]**
+   **[10 Marks]** [View Code](./exception-handling/index.js)
 
 8. **Explain built in objects in Javascript.**
    **[10 Marks]**
